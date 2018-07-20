@@ -5,12 +5,14 @@
 <meta name="viewport" content="minimum-scale=1, initial-scale=1, user-scalable=no">
 <style>
 	[tab].kntabactive {background:green; color:black !important}
-	[tab].kntabinactive {color:black !important; text-decoration: none}
+	[tab].kntabinactive {color:white !important; text-decoration: none}
 	[page].knpageactive {display:block; height:100%;width:100%; border:none;margin:0px;padding:0px}
 	[page].knpageinactive {display:none}
 	
 	body {margin:0px;padding:0px;height:100%; width:100%}
-	[area].kntabarea {height:1em; width:calc(100% - 6px); padding: 6px; padding-right:0px; background:darkblue}
+	[area].kntabarea {height:1em; width:calc(100% - 6px); padding: 6px; padding-right:0px;
+		background:darkblue; color:darkblue;
+		-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 	[area].knpagearea {height:calc(100vh - 1em - 12px); width:100%;padding:0px;margin:0px}
 </style>
 </head>
