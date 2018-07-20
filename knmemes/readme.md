@@ -6,7 +6,7 @@ Images in Markdown use this format for embedding them. Please use it:
 ![alt text, optional](url, required)
 ```
 
-Here's the [viewer](/knmemes/viewer).
+Here's the [viewer](/knmemes/viewer.html).
 
 Turn off your adblock for Kepu Nokwi, for our generous hosts. Thank you!
 
