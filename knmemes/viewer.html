@@ -1,0 +1,57 @@
+
+<!doctype HTML>
+<head>
+<title>Kepu Nokwi - KN Network</title>
+<meta name="viewport" content="minimum-scale=1, initial-scale=1, user-scalable=no">
+<style>
+	[tab].kntabactive {background:green; color:black !important}
+	[tab].kntabinactive {color:black !important; text-decoration: none}
+	[page].knpageactive {display:block; height:100%;width:100%; border:none;margin:0px;padding:0px}
+	[page].knpageinactive {display:none}
+	
+	body {margin:0px;padding:0px;height:100%; width:100%}
+	[area].kntabarea {height:1em; width:calc(100% - 6px); padding: 6px; padding-right:0px; background:darkblue}
+	[area].knpagearea {height:calc(100vh - 1em - 12px); width:100%;padding:0px;margin:0px}
+</style>
+</head>
+<body>
+<div area class="kntabarea">
+<a tab id="kepunokwi_tab" class="kntabactive" href="#" onclick="kntabswitch('kepunokwi', 'Kepu Nokwi')">Kepu Nokwi</a> - 
+<a tab id="yeet20_tab" class="kntabinactive" href="#" onclick="kntabswitch('yeet20', 'New Tab')" title="Test for tabs">YEET2.0: a dabbing test</a> - 
+</div>
+<div area class="knpagearea">
+<iframe page id="kepunokwi_page" class="knpageactive" src="https://md5hashing.net/crypto/chat/room/555a2HoyHZwcvE5eK/iframe"></iframe>
+<iframe page id="yeet20_page" class="knpageinactive" src="data:text/html,YEET2.0"></iframe>
+</div>
+<script type="text/javascript">
+function kntabswitch(tab,title) {
+	document.querySelectorAll("[tab]").forEach((function (e) {e.className = "kntabinactive"}))
+	document.querySelectorAll("[page]").forEach((function (e) {e.className = "knpageinactive"}))
+	document.getElementById(tab+"_tab").className = "kntabactive";
+	document.getElementById(tab+"_page").className = "knpageactive";
+	document.getElementsByTagName("title")[0].innerHTML = title + " - KN Network"
+}
+function iframe_corrector() {
+	document.querySelectorAll("iframe").forEach((function (e) {
+		//Description (in page)
+		e.contentWindow.document.querySelectorAll(".panel-body.messages-info > div > p").forEach((function (fc) {
+			if (e.id = "kepunokwi_page") {
+				fc.innerHTML("Dark meme club. Post anything here. Don't take offense to anything. Keep everything secret.<br>Images are formatted as <code>![](URLHERE)</code>.<br />"+
+				"Press <a href='https://b252chat.gq/knmemes'>here</a> to visit the website.")
+			}
+			//Add "else if"s here:
+
+			//If none of the above pages match, oh well
+			else {
+				//Oh well, nothing changes.
+			}
+		}))
+
+		//Description on login cannot change
+		//Block ads (replace head)
+		e.contentWindow.document.head.outerHTML = "<head>  <link rel=\"stylesheet\" type=\"text/css\" class=\"__meteor-css__\" href=\"/63f1de39ab9076a1468cfd4fd214cdc8e3ac7660.css?meteor_css_resource=true\"><meta charset=\"UTF-8\"><meta name=\"fragment\" content=\"!\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"><meta name=\"format-detection\" content=\"telephone=no, date=no, address=no, email=no\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"><meta content=\"website\" name=\"og:type\" property=\"og:type\"><meta content=\"summary\" name=\"twitter:card\"><meta content=\"@MD5Hashing\" name=\"twitter:site\"><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"><link rel=\"icon\" type=\"image/png\" href=\"/android-chrome-192x192.png\" sizes=\"192x192\"><link rel=\"icon\" type=\"image/png\" href=\"/favicon-194x194.png\" sizes=\"194x194\"><link rel=\"icon\" type=\"image/png\" href=\"/favicon-32x32.png\" sizes=\"32x32\"><link rel=\"icon\" type=\"image/png\" href=\"/favicon-16x16.png\" sizes=\"16x16\"><link rel=\"manifest\" href=\"/man.json\"><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#bd362f\"><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\"><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><meta name=\"apple-mobile-web-app-title\" content=\"md5#\"><meta name=\"application-name\" content=\"md5#\"><meta name=\"msapplication-TileColor\" content=\"#00ff48\"><meta name=\"msapplication-TileImage\" content=\"/mstile-144x144.png\"><meta name=\"theme-color\" content=\"#bd362f\"><meta itemprop=\"name\" content=\"MD5Hashing: Hashing and Anonymity toolkit\"><meta name=\"og:site_name\" property=\"og:site_name\" content=\"MD5Hashing: Hashing and Anonymity toolkit\"><meta name=\"fb:app_id\" property=\"fb:app_id\" content=\"1794741257419580\"><link href=\"https://plus.google.com/112315408667694355948\" rel=\"publisher\"><title>Kepu Nokwi - Anonymous Crypto Chat</title><meta data-name=\"name\" name=\"name\" itemprop=\"name\" content=\"MD5Hashing\"><meta data-name=\"robots\" content=\"noindex, nofollow\" name=\"robots\"><meta data-name=\"google\" content=\"notranslate\" name=\"google\"><meta data-name=\"keywords\" name=\"keywords\" itemprop=\"keywords\" content=\"chat, crypto, encrypted chat, encrypted, password-protected, password, anonymous\"><meta data-name=\"description\" name=\"description\" itemprop=\"description\" property=\"og:description\" content=\"Dark meme club. Post anything here. Don't take offense to anything. Keep everything secret.Images are formatted as `![](URLHERE)`.\"><meta data-name=\"og:image\" name=\"og:image\" property=\"og:image\" content=\"https://md5hashing.net/img/chat/icon_1200x750.png\"><meta data-name=\"og:title\" name=\"og:title\" content=\"Kepu Nokwi\"><meta data-name=\"og:url\" name=\"og:url\" property=\"og:url\" content=\"https://md5hashing.net/crypto/chat/room/555a2HoyHZwcvE5eK/iframe\"><meta data-name=\"twitter:image\" content=\"https://md5hashing.net/img/chat/icon_1200x750.png\" name=\"twitter:image\"><meta data-name=\"twitter:description\" content=\"Dark meme club. Post anything here. Don't take offense to anything. Keep everything secret.Images are formatted as `![](URLHERE)`.\" name=\"twitter:description\"><meta data-name=\"twitter:title\" content=\"Kepu Nokwi\" name=\"twitter:title\"><link data-name=\"canonical\" rel=\"canonical\" itemprop=\"url\" href=\"https://md5hashing.net/crypto/chat/room/555a2HoyHZwcvE5eK/iframe\"><link data-name=\"image\" rel=\"image\" sizes=\"500x500\" href=\"https://md5hashing.net/img/chat/icon_500x500.png\"><link data-name=\"main-image\" rel=\"main-image\" itemprop=\"image\" href=\"https://md5hashing.net/img/chat/icon_1200x750.png\"></head>"
+	}))
+}
+iframe_corrector()
+</script>
+</body>
