@@ -1,6 +1,8 @@
 # Kepu Nokwi
 **The private edgy meme board**
 
+> The viewer will soon be put [here](viewer.html). It'll be a tabbed viewer of all the KN channels and this site all wrapped in one.
+
 Images in Markdown use this format for embedding them. Please use it: 
 ```
 ![alt text, optional](url, required)
@@ -9,7 +11,7 @@ Images in Markdown use this format for embedding them. Please use it:
 Turn off your adblock for Kepu Nokwi, for our generous hosts. Thank you!
 
 ## Rooms
-[Kepu Nokwi](https://bit.ly/kepunokwi) *([About](about/rooms/kn.md))*
+[Kepu Nokwi](https://bit.ly/knmemes) *([About](about/rooms/kn.md))*
 
 Daily Memes
 
