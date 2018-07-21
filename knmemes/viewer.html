@@ -1,4 +1,3 @@
-
 <!doctype HTML>
 <head>
 <title>Kepu Nokwi - KN Network</title>
@@ -19,13 +18,14 @@
 <body>
 <div area class="kntabarea">
 <a tab id="kepunokwi_tab" class="kntabactive" href="#" onclick="kntabswitch('kepunokwi', 'Kepu Nokwi')">Kepu Nokwi</a> - 
-<a tab id="yeet20_tab" class="kntabinactive" href="#" onclick="kntabswitch('yeet20', 'New Tab')" title="Test for tabs">YEET2.0: a dabbing test</a> - 
+<a tab id="knweb_tab" class="kntabinactive" href="#" onclick="kntabswitch('knweb', 'KN Website')" oncontextmenu="webtab1 += 1;newtab('knweb'+webtab,input('Name the KN Website tab'),'https://b252chat.gq/knmemes');return false;">KN Website</a> - 
 </div>
 <div area class="knpagearea">
 <iframe page id="kepunokwi_page" class="knpageactive" src="https://md5hashing.net/crypto/chat/room/555a2HoyHZwcvE5eK/iframe"></iframe>
-<iframe page id="yeet20_page" class="knpageinactive" src="data:text/html,YEET2.0"></iframe>
+<iframe page id="knweb_page" class="knpageinactive" src="https://b252chat.gq/knmemes"></iframe>
 </div>
 <script type="text/javascript">
+var webtab1 = 0;
 function kntabswitch(tab,title) {
 	document.querySelectorAll("[tab]").forEach((function (e) {e.className = "kntabinactive"}))
 	document.querySelectorAll("[page]").forEach((function (e) {e.className = "knpageinactive"}))
@@ -33,6 +33,13 @@ function kntabswitch(tab,title) {
 	document.getElementById(tab+"_page").className = "knpageactive";
 	document.getElementsByTagName("title")[0].innerHTML = title + " - KN Network"
 }
+function newtab(tab,title,url) {
+	document.querySelector("[area].kntabarea").innerHTML +=
+		"<a tab id='"+tab+"_tab' class='kntabinactive' href='#' onclick=\"kntabswitch('"+tab+"', '"+title+"')">"+title+"</a> - ";
+	document.querySelector("[area].knpagearea").innerHTML +=
+		"<iframe page id='"+tab+"_page' class='knpageinactive' src='"+url+"'></iframe>";
+}
+/*
 function iframe_corrector() {
 	document.querySelectorAll("iframe").forEach((function (e) {
 		//Description (in page)
@@ -55,5 +62,6 @@ function iframe_corrector() {
 	}))
 }
 iframe_corrector()
+*/
 </script>
 </body>
