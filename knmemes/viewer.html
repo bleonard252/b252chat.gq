@@ -2,22 +2,25 @@
 <head>
 <title>Kepu Nokwi - KN Network</title>
 <meta name="viewport" content="minimum-scale=1, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 <style>
 	@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-	[tab].kntabactive {background:green; color:black !important}
-	[tab].kntabinactive {color:white !important; text-decoration: none}
+	[tab].kntabactive {background:#00aa00; color:#777777 !important}
+	[tab].kntabinactive {color:#000000 !important; text-decoration: none}
 	[page].knpageactive {display:block; height:100%;width:100%; border:none;margin:0px;padding:0px}
 	[page].knpageinactive {display:none}
 	
 	body {margin:0px;padding:0px;height:100%; width:100%}
 	[area].kntabarea {height:1em; width:calc(100% - 6px); padding: 6px; padding-right:0px;
-		background:darkblue; color:darkblue; font-family: 'Roboto Slab', serif; font-size: 1em;
-		-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+		background-color:#00008b; color:#00008b; font-family: 'Roboto Slab', serif; font-size: 0.9em;
+		-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+		overflow-x:scroll;overflow-y:hidden;white-space:nowrap;}
 	[area].knpagearea {height:calc(100vh - 1em - 12px); width:100%;padding:0px;margin:0px}
 </style>
 </head>
 <body>
-<div area class="kntabarea">
+<div area class="kntabarea" data-simplebar>
 <a tab id="kepunokwi_tab" class="kntabactive" href="#" onclick="kntabswitch('kepunokwi', 'Kepu Nokwi')">Kepu Nokwi</a> - 
 <a tab id="knweb_tab" class="kntabinactive" href="#" onclick="kntabswitch('knweb', 'KN Website')" oncontextmenu="webtab1 += 1;newtab('knweb'+webtab1,prompt('Name the KN Website tab'),'/knmemes/index.html');return false;">KN Website</a> - 
 </div>
