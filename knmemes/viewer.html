@@ -43,5 +43,8 @@ function newtab(tab,title,url) {
 		"<iframe page id='"+tab+"_page' class='knpageinactive' src='"+url+"'></iframe>";
 	kntabswitch(tab,title); //Always switch to the new tab
 }
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('viewer-sw.js');
+}
 </script>
 </body>
