@@ -18,7 +18,7 @@
 <body>
 <div area class="kntabarea">
 <a tab id="kepunokwi_tab" class="kntabactive" href="#" onclick="kntabswitch('kepunokwi', 'Kepu Nokwi')">Kepu Nokwi</a> - 
-<a tab id="knweb_tab" class="kntabinactive" href="#" onclick="kntabswitch('knweb', 'KN Website')" oncontextmenu="webtab1 += 1;newtab('knweb'+webtab,input('Name the KN Website tab'),'https://b252chat.gq/knmemes');return false;">KN Website</a> - 
+<a tab id="knweb_tab" class="kntabinactive" href="#" onclick="kntabswitch('knweb', 'KN Website')" oncontextmenu="webtab1 += 1;newtab('knweb'+webtab1,input('Name the KN Website tab'),'https://b252chat.gq/knmemes');return false;">KN Website</a> - 
 </div>
 <div area class="knpagearea">
 <iframe page id="kepunokwi_page" class="knpageactive" src="https://md5hashing.net/crypto/chat/room/555a2HoyHZwcvE5eK/iframe"></iframe>
@@ -35,9 +35,10 @@ function kntabswitch(tab,title) {
 }
 function newtab(tab,title,url) {
 	document.querySelector("[area].kntabarea").innerHTML +=
-		"<a tab id='"+tab+"_tab' class='kntabinactive' href='#' onclick=\"kntabswitch('"+tab+"', '"+title+"')">"+title+"</a> - ";
+		"<a tab id='"+tab+"_tab' class='kntabinactive' href='#' onclick=\"kntabswitch('"+tab+"', '"+title+"')\">"+title+"</a> - ";
 	document.querySelector("[area].knpagearea").innerHTML +=
 		"<iframe page id='"+tab+"_page' class='knpageinactive' src='"+url+"'></iframe>";
+	kntabswitch(tab,title);
 }
 /*
 function iframe_corrector() {
