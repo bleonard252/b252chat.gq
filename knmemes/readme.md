@@ -11,7 +11,7 @@ Here's the [viewer](/knmemes/viewer.html).
 Turn off your adblock for Kepu Nokwi, for our generous hosts. Thank you!
 
 ## Rooms
-[Kepu Nokwi](https://bit.ly/knmemes) *([About](about/rooms/kn.md))*
+[Kepu Nokwi](https://kn.b252chat.gq) *([About](about/rooms/kn.md))*
 
 Daily Memes
 
