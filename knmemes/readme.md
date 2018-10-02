@@ -6,16 +6,16 @@ Images in Markdown use this format for embedding them. Please use it:
 ![alt text, optional](url, required)
 ```
 
-Here's the [viewer](/knmemes/viewer.html).
+Here's the [viewer](/knmemes/viewer.html), and a handy [MagaImg](https://magaimg.net) link..
 
-Turn off your adblock for Kepu Nokwi, for our generous hosts. Thank you!
+Turn on AdBlock when visiting FFKN on desktop.
 
 ## Rooms
 [Kepu Nokwi](https://kn.b252chat.gq) *([About](about/rooms/kn.md))*
 
-Daily Memes
+Family Friendly Kepu Nokwi *([About](about/rooms/ffkn.md))*
 
-Club Chat
+Daily Memes
 
 Purely Memes
 
@@ -25,3 +25,5 @@ Purely Memes
 [Markdown???](about/md.md)
 
 [Proposed new rooms](about/prop_rooms.md)
+
+<!--[Stars](about/diamonds.md)-->
